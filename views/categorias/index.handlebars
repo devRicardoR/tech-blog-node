@@ -1,0 +1,21 @@
+<div class="container mt-4">
+    <h4 class="text-center">Categorias</h4>
+    <hr>
+    <div class="row">
+        {{#each categorias}}
+        <div class="col-md-4 mb-3">
+            <a href="/categorias/{{slug}}" class="text-decoration-none">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{nome}}</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{else}}
+        <div class="col-12 text-center">
+            <p>Nenhuma categoria encontrada.</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
